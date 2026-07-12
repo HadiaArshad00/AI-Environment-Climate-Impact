@@ -1,0 +1,76 @@
+# AI & Climate Change Research Document Generator Configuration
+# ================================================================
+
+project:
+  name: "AI Environment Climate Research"
+  version: "1.0.0"
+  author: "Research Team"
+  date: "2026-07-10"
+
+document:
+  title: "Artificial Intelligence and Its Impact on Environment and Climate Change"
+  subtitle: "A Comprehensive Review of Environmental Footprints, Mitigation Strategies, and Sustainable Pathways"
+  font:
+    name: "Times New Roman"
+    size_body: 12
+    size_abstract: 11
+    size_caption: 10
+    size_table: 10
+    size_reference: 10
+  colors:
+    heading: "#003366"
+    table_header: "#1F4E79"
+    primary_chart: "#1f4e79"
+    secondary_chart: "#c55a11"
+    accent_chart: "#2e7d32"
+    warning_chart: "#c62828"
+  margins:
+    top: 1.0
+    bottom: 1.0
+    left: 1.25
+    right: 1.25
+
+output:
+  directory: "output"
+  figures_directory: "figures"
+  cache_directory: "data/cache"
+  formats:
+    - "docx"
+    - "pdf"  # Requires additional setup
+
+data_sources:
+  iea:
+    name: "International Energy Agency"
+    url: "https://www.iea.org"
+    enabled: true
+  google_environmental:
+    name: "Google Environmental Reports"
+    url: "https:// sustainability.google"
+    enabled: true
+  microsoft_sustainability:
+    name: "Microsoft Sustainability"
+    url: "https://www.microsoft.com/sustainability"
+    enabled: true
+  meta_sustainability:
+    name: "Meta Sustainability"
+    url: "https://sustainability.fb.com"
+    enabled: true
+
+analysis:
+  projection_models:
+    - "linear"
+    - "exponential"
+    - "logistic"
+  default_model: "exponential"
+  confidence_level: 0.95
+
+visualization:
+  dpi: 300
+  figure_format: "png"
+  color_palette: "RdYlGn"
+  style: "seaborn-v0_8-whitegrid"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/pipeline.log"
