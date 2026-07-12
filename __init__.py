@@ -1,1 +1,1 @@
-"""Document builder module for AI and Climate research."""
+"""Visualization module for AI & Climate research."""
