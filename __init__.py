@@ -1,1 +1,1 @@
-"""Analysis module for AI & Climate research."""
+"""Data collection module for AI & Climate research."""
